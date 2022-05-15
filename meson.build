@@ -6,7 +6,7 @@ compiler_settings.set('CC', 'clang')
 compiler_settings.set('CXX', 'clang++')
 meson.add_devenv(compiler_settings)
 
-sources = ['imgui_demo.cpp', 'imgui_draw.cpp', 'imgui_tables.cpp', 'imgui_widgets.cpp', 'imgui.cpp', 'main.mm', 'imgui_impl_metal.mm', 'imgui_impl_osx.mm']
+sources = ['libs/imgui_demo.cpp', 'libs/imgui_draw.cpp', 'libs/imgui_tables.cpp', 'libs/imgui_widgets.cpp', 'libs/imgui.cpp', 'main.mm', 'libs/imgui_impl_metal.mm', 'libs/imgui_impl_osx.mm']
 sdl2_dep = dependency('sdl2')
 dep_main = dependency('appleframeworks', modules : ['Foundation', 'AppKit', 'MetalKit', 'Metal', 'GameController','QuartzCore'])
 
